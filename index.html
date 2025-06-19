@@ -20,7 +20,36 @@
         <!-- Inicio Header -->
         <!-- Fin Header -->
         <!-- Inicio Form1 -->
+        <section class="container-fluid p-3">
+            <div class="mb-3">
+                <label for="nombreCliente" class="form-label">Nombre del cliente</label>
+                <input type="text" class="form-control" id="nombreCliente" name="nombreCliente">
+            </div>
+            <div class="mb-3">
+                <label for="tipoReparacion" class="form-label">Tipo de Reparación</label>
+                <select class="form-select" id="tipoReparacion" name="tipoReparacion" aria-label="Selección de tipo de reparación">
+                    <option selected>Selecciona un servicio</option>
+                    <option value="1">Cambio de aceite</option>
+                    <option value="2">Revisión de frenos</option>
+                    <option value="3">Diagnóstico eléctrico</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción del problema</label>
+                <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="fechaCita" class="form-label">Agendar cita</label>
+                <input type="date" class="form-control" id="fechaCita" name="fechaCita">
+            </div>
+        </section>
         <!-- Fin Form1 -->
+
+        <!-- Línea divisoria -->
+        <div class="container-fluid">
+            <hr class="border border-secondary border-2 opacity-50 my-4">
+        </div>
+        <!-- Fin línea divisioria -->
         <!-- Inicio Form2 -->
         <!-- Fin Form2 -->
 

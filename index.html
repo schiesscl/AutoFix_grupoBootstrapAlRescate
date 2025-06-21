@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" id="main">
 
 
         <!-- Inicio Header -->
@@ -71,7 +71,7 @@
             <div class="mb-3">
                 <label for="tipoReparacion" class="form-label">Tipo de Reparación</label>
                 <select class="form-select" id="tipoReparacion" name="tipoReparacion" aria-label="Selección de tipo de reparación">
-                    <option selected>Selecciona un servicio</option>
+                    <option selected value="0">Selecciona un servicio</option>
                     <option value="1">Cambio de aceite</option>
                     <option value="2">Revisión de frenos</option>
                     <option value="3">Diagnóstico eléctrico</option>
@@ -94,9 +94,10 @@
         </div>
         <!-- Fin línea divisioria -->
         <!-- Inicio Form2 -->
+         <section class="container-fluid p-3">
+
         <div class="row">
             <h5 style="margin-bottom: 0px;">Informacion de pago(Simulado)</h5>
-            <form>
                 <div class="mb-3">
                     <label class="form-label">Numero de tarjeta</label>
                     <input type="text" class="form-control" id="nTarjeta">
@@ -109,9 +110,12 @@
                     <label class="form-label">CVV</label>
                     <input type="password" class="form-control" id="CVV">
                 </div>
-                <button id="confirmar" class="btn btn-primary">Confirmar Solicitud</button>
-            </form>
+                <div>
+                    <button id="confirmar" class="btn btn-primary">Confirmar Solicitud</button>
+                </div>
+                
          </div>
+        </section>
         <!-- Fin Form2 -->
     </div>
     <script src="funciones.js"></script>

@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (nTarjeta) {
         nTarjeta.setAttribute('maxlength', '16');
         nTarjeta.addEventListener('input', function(e) {
-            this.value = this.value.replace(/\D/g, '').slice(0, 8);
+            this.value = this.value.replace(/\D/g, '').slice(0, 16);
         });
     }
 

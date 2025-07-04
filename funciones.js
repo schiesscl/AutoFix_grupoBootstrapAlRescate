@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const cvv = document.getElementById('CVV');
 
     if (nTarjeta) {
-        nTarjeta.setAttribute('maxlength', '8');
+        nTarjeta.setAttribute('maxlength', '16');
         nTarjeta.addEventListener('input', function(e) {
             this.value = this.value.replace(/\D/g, '').slice(0, 8);
         });

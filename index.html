@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -16,52 +15,66 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <head>
-    </head>
 </head>
+    </head>
+    <body>
+        <div class="container-fluid">
 
-<body>
-    <!-- Inicio Header -->
-    <h1 class="text-center my-5"> AutoFix - Reparación de vehículos a Domicilio</h1>
+        
+        <!-- Inicio Header -->
+        <!-- Fin Header -->
+        <!-- Inicio Form1 -->
+        <section class="container-fluid p-3">
+            <div class="mb-3">
+                <label for="nombreCliente" class="form-label">Nombre del cliente</label>
+                <input type="text" class="form-control" id="nombreCliente" name="nombreCliente">
+            </div>
+            <div class="mb-3">
+                <label for="tipoReparacion" class="form-label">Tipo de Reparación</label>
+                <select class="form-select" id="tipoReparacion" name="tipoReparacion" aria-label="Selección de tipo de reparación">
+                    <option selected>Selecciona un servicio</option>
+                    <option value="1">Cambio de aceite</option>
+                    <option value="2">Revisión de frenos</option>
+                    <option value="3">Diagnóstico eléctrico</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción del problema</label>
+                <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="fechaCita" class="form-label">Agendar cita</label>
+                <input type="date" class="form-control" id="fechaCita" name="fechaCita">
+            </div>
+        </section>
+        <!-- Fin Form1 -->
 
-    <h3 class="m-5" >Servicio y Precios</h3>
-
-    <div class="d-flex justify-content-center">
-
-    
-    <div class="card m-3" style="width: 18rem;">
-        <img src="img/aceite.png" class="card-img-top p-2" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Cambio de Aceite</h5>
-            <p class="card-text">Precio: $50000 CLP</p>
-
+        <!-- Línea divisoria -->
+        <div class="container-fluid">
+            <hr class="border border-secondary border-2 opacity-50 my-4">
         </div>
-    </div>
-
-    <div class="card m-3" style="width: 18rem;">
-        <img src="img/freno.png" class="card-img-top p-2" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Revisión de frenos</h5>
-            <p class="card-text">Precio: $70000 CLP</p>
-
+        <!-- Fin línea divisioria -->
+        <!-- Inicio Form2 -->
+        <div class="row">
+            <h5 style="margin-bottom: 0px;">Informacion de pago(Simulado)</h5>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Numero de tarjeta</label>
+                    <input type="text" class="form-control" id="nTarjeta">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Nombre titular</label>
+                    <input type="text" class="form-control" id="nTitular">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">CVV</label>
+                    <input type="password" class="form-control" id="CVV">
+                </div>
+                <button id="confirmar" class="btn btn-primary">Confirmar Solicitud</button>
+            </form>
+         </div>
+        <!-- Fin Form2 -->
         </div>
-    </div>
-
-    <div class="card m-3" style="width: 18rem;">
-        <img src="img/diagnostico.png" class="card-img-top p-2" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Diagnóstico eléctrico</h5>
-            <p class="card-text">Precio: $60000 CLP</p>
-
-        </div>
-    </div>
-    
-    </div>
-    <!-- Fin Header -->
-    <!-- Inicio Form1 -->
-    <!-- Fin Form1 -->
-    <!-- Inicio Form2 -->
-    <!-- Fin Form2 -->
-
-</body>
-
+        <script src="funciones.js"></script>
+    </body>
 </html>
